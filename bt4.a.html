@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p id="hienC"></p>
+<p id="hienS"></p>
+<input type="text" id="bc" >
+<button onclick="show()">Enter</button>
+<script>
+    function show(){
+        let a = document.getElementById('bc').value;
+        a = parseInt(a)
+        document.getElementById('hienC').innerHTML='chu vi là:' + (a+a);
+        document.getElementById('hienS').innerHTML='S là:' + a*a;
+    }
+
+</script>
+</body>
+</html>

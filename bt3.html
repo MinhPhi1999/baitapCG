@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="hien"></h1>
+<input type="text" id="nhap1" >
+<input type="text" id="nhap2">
+<button onclick="sh()">
+    enter
+</button>
+</body>
+</html>
+<script>
+ function sh(){
+     let a = document.getElementById('nhap1').value;
+     let b = document.getElementById('nhap2').value;
+     document.getElementById('hien').innerHTML='kết quả là:' + a*b
+ }
+
+</script>
