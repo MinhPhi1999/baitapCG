@@ -6,9 +6,18 @@
 </head>
 <body>
 <p id="hien1"></p>
-<p id="hien2"></p>
 <input type="text" id="aaa" >;
 <input type="text" id="bbb" >;
 <button onclick="show()" >Enter</button>;
 </body>
+<script>
+    function show() {
+        let a = document.getElementById('aaa').value;
+        let b = document.getElementById('bbb').value;
+        a = parseInt(a);
+        b = parseInt(b);
+        let c = (a + b) * (b - a + 1) / 2;
+        document.getElementById('hien1').innerHTML = 'ket qua la:' + c
+    }
+</script>
 </html>
